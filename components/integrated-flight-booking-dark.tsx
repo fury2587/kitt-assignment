@@ -1029,12 +1029,83 @@ interface FlightDetails {
     duration: string;
   };
 }
+const airports: Airport[] = [
+  {
+    "name": "Indira Gandhi International Airport",
+    "code": "DEL",
+    "city": "New Delhi",
+    "country": "India"
+  },
+  {
+    "name": "Chhatrapati Shivaji Maharaj International Airport",
+    "code": "BOM",
+    "city": "Mumbai",
+    "country": "India"
+  },
+  {
+    "name": "John F. Kennedy International Airport",
+    "code": "JFK",
+    "city": "New York",
+    "country": "United States"
+  },
+  {
+    "name": "Dubai International Airport",
+    "code": "DXB",
+    "city": "Dubai",
+    "country": "United Arab Emirates"
+  },
+  {
+    "name": "Heathrow Airport",
+    "code": "LHR",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Singapore Changi Airport",
+    "code": "SIN",
+    "city": "Singapore",
+    "country": "Singapore"
+  },
+  {
+    "name": "Los Angeles International Airport",
+    "code": "LAX",
+    "city": "Los Angeles",
+    "country": "United States"
+  },
+  {
+    "name": "Beijing Capital International Airport",
+    "code": "PEK",
+    "city": "Beijing",
+    "country": "China"
+  },
+  {
+    "name": "Sydney Kingsford Smith International Airport",
+    "code": "SYD",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "Tokyo Haneda Airport",
+    "code": "HND",
+    "city": "Tokyo",
+    "country": "Japan"
+  }
+]
+
+const flightData: Flight[] = [
+  { id: "1", airline: "Emirates", flightNumber: "AT 4324", departure: "9:45 AM", arrival: "11:45 AM", duration: "2h 10min", stops: "Non stop", price: "AED 2,456.90" },
+  { id: "2", airline: "Lufthansa", flightNumber: "AT 4534", departure: "11:45 PM", arrival: "6:45 AM", duration: "4h 10min", stops: "2 stops", price: "AED 2,456.90"},
+  { id: "3", airline: "Emirates", flightNumber: "AT 4324", departure: "9:45 AM", arrival: "11:45 AM", duration: "7h 10min", stops: "1 stop", price: "AED 1,456.90"},
+  { id: "4", airline: "Emirates", flightNumber: "AT 4324", departure: "11:45 PM", arrival: "6:45 AM", duration: "19h 10min", stops: "1 stop", price: "AED 1,456.90"},
+  { id: "5", airline: "Lufthansa", flightNumber: "AT 4324", departure: "9:45 AM", arrival: "11:45 AM", duration: "7h 10min", stops: "Non stop", price: "AED 1,456.90"},
+  { id: "6", airline: "Lufthansa", flightNumber: "AT 4324, Indigo • 6E 783", departure: "11:45 PM", arrival: "6:45 AM", duration: "4h 10min", stops: "Non stop", price: "AED 1,456.90" },
+]
 
 // Flight data (this can be fetched from an API in real usage)
-const flightData: Flight[] = [
-  { id: '1', airline: 'Emirates', flightNumber: 'EK202', departure: '9:45 AM', arrival: '11:45 AM', duration: '2h', stops: 'Non-stop', price: '$500' },
-  { id: '2', airline: 'Lufthansa', flightNumber: 'LH123', departure: '11:45 PM', arrival: '6:45 AM', duration: '4h 10min', stops: '2 stops', price: '$800' },
-];
+// const flightData: Flight[] = [
+//   { id: '1', airline: 'Emirates', flightNumber: 'EK202', departure: '9:45 AM', arrival: '11:45 AM', duration: '2h', stops: 'Non-stop', price: '$500' },
+//   { id: '2', airline: 'Lufthansa', flightNumber: 'LH123', departure: '11:45 PM', arrival: '6:45 AM', duration: '4h 10min', stops: '2 stops', price: '$800' },
+// ];
 
 const sampleFlightDetails: FlightDetails = {
   outbound: {
