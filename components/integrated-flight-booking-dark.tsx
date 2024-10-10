@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -12,7 +13,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css"; 
 import { motion } from "framer-motion";
 import airportData from "../public/airports.json"; // Adjust this path according to your structure
-
+import Image from "next/image";
 interface Airport {
   name: string;
   code: string;
